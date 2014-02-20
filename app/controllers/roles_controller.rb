@@ -1,5 +1,9 @@
 class RolesController < ApplicationController
   def index
+    @roles = Role.all
+    if !@roles.nil?
+      @roles = @roles.page(params[:page]).per(6)
+    end
   end
 
   def new

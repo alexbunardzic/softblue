@@ -34,6 +34,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'rack-test'
+gem 'kaminari'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
