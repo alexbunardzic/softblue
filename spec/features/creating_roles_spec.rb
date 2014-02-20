@@ -11,5 +11,11 @@ feature 'Creating Roles' do
     click_button 'Create Role'
 
     expect(page).to have_content('Role has been created.')
+
+    role = Role.where(name: "Test Role").first
+    expect(page.current_url).to eql(role_url(role))
+    title = "Test Role - Roles - Softblue"
+    expect(page).to have_title(title)
   end
+
 end
