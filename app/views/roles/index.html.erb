@@ -2,16 +2,18 @@
 <br />
 <%= link_to "New Role", new_role_path %>
 <br /><br />
-<%= paginate @roles %>
+<%#= paginate @roles %>
 <br />
 <table>
   <tr>
     <th align="left">Name</th><th align="left">Description</th>
   </tr>
+  <%# cache @roles do %>
   <% @roles.each do |role| %>
     <tr>
-      <td><%= role.name %></td>
+      <td><%= link_to "#{role.name}", role_path(role) %></td>
       <td><%= role.description %></td>
     </tr>
   <% end %>
+  <%# end %>
 </table>

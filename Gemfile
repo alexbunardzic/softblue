@@ -36,6 +36,9 @@ end
 
 gem 'rack-test'
 gem 'kaminari'
+gem 'cache_digests'
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -51,9 +54,11 @@ gem 'kaminari'
 
 group :test, :development do
   gem 'rspec-rails', "2.14"
+  gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'capybara', "2.1.0"
+  gem 'factory_girl_rails'
 end
 

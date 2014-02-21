@@ -1,2 +1,6 @@
 <% title(@role.name, "Roles") %>
 <h2><%= @role.name %></h2>
+<br />
+<%= link_to "Edit Role", edit_role_path(@role) %>&nbsp;|&nbsp;
+<%= link_to "Delete Role", role_path(@role), method: :delete, :date => {confirm: "Are you sure?"} %>
+<%#= link_to "New User Story", new_user_stories_path %>

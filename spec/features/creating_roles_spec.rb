@@ -23,8 +23,8 @@ feature 'Creating Roles' do
   scenario 'cannot create a role without a name' do
     click_button 'Create Role'
 
-    #expect(page).to have_content("Role has not been created.")
-    #expect(page).to have_content("Name can't be blank")
+    expect(page).to have_content("Role has not been created.")
+    expect(page).to have_content("Name can't be blank")
   end
 
 end

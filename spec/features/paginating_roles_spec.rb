@@ -12,10 +12,6 @@ feature 'Paginating roles' do
     role.save
   end
 
-  scenario 'visit' do
-    #visit '/'
-  end
-
   after do
     Kaminari.config.default_per_page = @default_per_page
   end
