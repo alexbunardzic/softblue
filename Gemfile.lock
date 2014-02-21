@@ -31,6 +31,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     atomic (1.1.14)
+    bcrypt-ruby (3.1.2)
     builder (3.1.4)
     cache_digests (0.3.1)
       actionpack (>= 3.2)
@@ -149,6 +150,7 @@ PLATFORMS
 DEPENDENCIES
   actionpack-action_caching
   actionpack-page_caching
+  bcrypt-ruby (~> 3.1.2)
   cache_digests
   capybara (= 2.1.0)
   coffee-rails (~> 4.0.0)

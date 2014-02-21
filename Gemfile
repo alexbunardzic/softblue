@@ -41,7 +41,7 @@ gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
